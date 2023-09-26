@@ -14,5 +14,10 @@ public class BottleOfSoda extends Product{
         super(brand, name, price);
         this.taste = taste;
     }
+    @Override
+    public String displayInfo() {
+        return String.format("[ВОДА] %s - %s - %.2f - вкус: %s",
+                brand, name, price, taste);
+    }
 }
 

@@ -4,15 +4,16 @@ public class VendingMachine {
 
     private List<Product> products;
 
-    public VendingMachine(List<Product> products){
-        this.products = products;
-    }
-    public BottleOfMilk getBottleOfMilk(String name, int volume) {
+
+public VendingMachine(List<Product> products){
+    this.products = products;
+}
+    public BottleOfSoda getBottleOfSoda(String name, String taste) {
         for (Product product : products){
-            if (product instanceof BottleOfMilk){
-                BottleOfMilk bottleOfMilk = (BottleOfMilk)product;
-                if (bottleOfMilk.getName().equals(name) && bottleOfMilk.getVolume() == volume)
-                    return bottleOfMilk;
+            if (product instanceof BottleOfSoda){
+                BottleOfSoda bottleOfSoda = (BottleOfSoda)product;
+                if (bottleOfSoda.getName().equals(name) && bottleOfSoda.getTaste() == taste)
+                    return bottleOfSoda;
             }
         }
         return null;
