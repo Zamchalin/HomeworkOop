@@ -35,7 +35,7 @@ public class Program {
 
         VendingMachine vendingMachine = new VendingMachine(arrayList1);
 
-    BottleOfSoda bottleOfSoda = vendingMachine.getBottleOfSoda("Кузнечик", "Лайм");
+    BottleOfSoda bottleOfSoda = vendingMachine.getBottleOfSoda("Кузнечик", "Лимон");
         if (bottleOfSoda != null){
                 System.out.println("Вы купили:");
                 System.out.println(bottleOfSoda.displayInfo());
