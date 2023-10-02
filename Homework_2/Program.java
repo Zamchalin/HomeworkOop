@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        Cat cat1 = new Cat("pushok",25);
+        Cat cat1 = new Cat("pirog",25);
         Plate plate1 = new Plate(20);
 
         if(cat1.getAppetite() > plate1.getFood()) {
