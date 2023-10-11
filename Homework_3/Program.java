@@ -61,7 +61,11 @@ public class Program {
         for (Employee employee: employees) {
             System.out.println(employee);
         }
+        Arrays.sort(employees, new SalaryComparator(SortType.Descending));
 
+        for (Employee employee: employees) {
+            System.out.println(employee);
+        }
 
     }
 
