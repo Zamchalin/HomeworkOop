@@ -9,19 +9,21 @@ public class Company {
     private String name;
 
     private int maxSalary;
+    private String vacancy;
 
     private Publisher jobAgency;
 
 
-    public Company(String name, Publisher jobAgency, int maxSalary) {
+    public Company(String name, Publisher jobAgency, int maxSalary, String vacancy) {
         this.name = name;
         this.maxSalary = maxSalary;
+        this.vacancy = vacancy;
         this.jobAgency = jobAgency;
     }
 
     public void needEmployee(){
         int salary = random.nextInt(maxSalary);
-        jobAgency.sendOffer(name, salary);
+        jobAgency.sendOffer(name, salary, vacancy);
     }
 
 }

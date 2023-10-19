@@ -13,9 +13,9 @@ public class Program {
     public static void main(String[] args) {
 
         Publisher jobAgency = new JobAgency();
-        Company google = new Company("Google", jobAgency, 120000);
-        Company yandex = new Company("Yandex", jobAgency, 95000);
-        Company geekBrains = new Company("GeekBrains", jobAgency, 98000);
+        Company google = new Company("Google", jobAgency, 12000,"Стажёр");
+        Company yandex = new Company("Yandex", jobAgency, 95000,"Програмист");
+        Company geekBrains = new Company("GeekBrains", jobAgency, 98000,"Програмист");
 
         Student student1 = new Student("Студент #1");
         Master master1 = new Master("Мастер #1");
